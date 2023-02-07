@@ -204,12 +204,18 @@ main .row .col h3 {
     margin: 1.25rem 0 .625rem;
 }
 
-main #john-doe h2 {
+main #john-doe h2,
+main #popular-artists h2 {
     margin: 2.5rem 0 .9375rem;
 }
 
-main #john-doe h2 + div {
+main #john-doe h2 + div,
+main #popular-artists h2 + div {
     margin-bottom: 1.875rem;
+}
+
+main #popular-artists img {
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 878px) {
