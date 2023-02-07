@@ -33,6 +33,14 @@ main #discover a {
     text-align: center;
 }
 
+main .row .col h3 {
+    font-size: 1em;
+}
+
+main .row .col .text-center div:last-child {
+    font-size: .875rem;
+}
+
 /*
 --------
 COMMON
@@ -157,6 +165,7 @@ main .overlay button {
 
 main .main-content {
     padding-left: 1.25rem;
+    padding-right: 1.875rem;
 }
 
 /* Lista discovery */
@@ -177,33 +186,51 @@ main #recently-played h2 {
     margin-bottom: 1.5625rem;
 }
 
-main #recently-played .row {
+main .row {
     margin: 0 -0.4688rem;
 }
 
-main #recently-played .row .col {
+main .row .col {
     width: calc(100% / 6);
+    max-width: 10.9375rem;
     padding: .4688rem;
 }
 
-main #recently-played .row .col img {
+main .row .col img {
     width: 100%;
 }
 
+main .row .col h3 {
+    margin: 1.25rem 0 .625rem;
+}
+
+main #john-doe h2 {
+    margin: 2.5rem 0 .9375rem;
+}
+
+main #john-doe h2 + div {
+    margin-bottom: 1.875rem;
+}
+
 @media screen and (max-width: 878px) {
-    main #recently-played .row {
+    main .row {
         flex-wrap: wrap;
         margin: 0 -0.3125rem;
+        justify-content: flex-start;
     }
 
-    main #recently-played .row .col {
+    main .row .col {
         width: calc(100% / 4);
         padding: .3125rem;
     }
 }
 
 @media screen and (max-width: 640px) {
-    main #recently-played .row .col {
+    main .row {
+        justify-content: space-between;
+    }
+
+    main .row .col {
         width: calc(100% / 2);
     }
 }
@@ -215,6 +242,10 @@ main #recently-played .row .col img {
 
     main .overlay {
         left: 3.125rem;
+    }
+
+    main .row .col {
+        max-width: 220px;
     }
 }
 
