@@ -29,6 +29,10 @@ main #discover a {
     font-size: .875rem;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /*
 --------
 COMMON
@@ -180,6 +184,10 @@ main #recently-played .row {
 main #recently-played .row .col {
     width: calc(100% / 6);
     padding: .4688rem;
+}
+
+main #recently-played .row .col img {
+    width: 100%;
 }
 
 @media screen and (max-width: 878px) {
