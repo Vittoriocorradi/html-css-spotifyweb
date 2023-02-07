@@ -18,4 +18,61 @@ TYPO
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+/*
+--------
+COMMON
+--------
+*/
+
+.flex {
+    display: flex;
+}
+
+/*
+--------
+BODY
+--------
+*/
+
+body .main-container {
+    height: calc(100vh - 5.625rem);
+}
+
+/*
+--------
+NAV
+--------
+*/
+
+nav {
+    background-color: #000000;
+    height: 100%;
+    width: 14.375rem;
+}
+
+/*
+--------
+MAIN
+--------
+*/
+
+main {
+    background-color: #141922;
+    height: 100%;
+    width: calc(100% - 14.375rem);
+    overflow: auto;
+}
+
+/*
+--------
+FOOTER
+--------
+*/
+
+footer {
+    height: 5.625rem;
+    background-color: #282828;
 }
