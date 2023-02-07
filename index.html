@@ -19,20 +19,24 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+
         <!-- Contenitore Nav e Main -->
         <div class="main-container flex">
             <!-- Nav -->
             <nav class="flex justify-space-between">
+                <!-- Nav superiore -->
                 <div class="upper-nav">
                     <div class="logo">
                         <img src="img/logo-small.svg" alt="Logo piccolo" class="none-lg">
                         <img src="img/logo.svg" alt="Logo grande" class="none-xs">
                     </div>
+                    <!-- Menù icone -->
                     <ul class="menu">
                         <li><i class="fa-solid fa-house"></i><span class="none-xs">Home</span></li>
                         <li><i class="fa-solid fa-magnifying-glass"></i><span class="none-xs">Cerca</span></li>
                         <li><i class="fa-solid fa-lines-leaning"></i><span class="none-xs">La tua Libreria</span></li>
                     </ul>
+                    <!-- Playlist -->
                     <ul class="playlist none-xs">
                         <li>Playlist</li>
                         <li>Crea playlist</li>
@@ -42,6 +46,7 @@
                         <li>Nome playlist</li>
                     </ul>
                 </div>
+                <!-- Nav inferiore -->
                 <div class="lower-nav">
                     <i class="fa-solid fa-arrow-down"></i>
                     <a href="#" class="none-xs">installa app</a>
@@ -53,17 +58,51 @@
                 </div>
             </nav>
             <!-- Nav -->
+
             <!-- Main -->
             <main>
 
             </main>
             <!-- /Main -->
+            
         </div>
         <!-- /Contenitore Nav e Main -->
 
         <!-- Footer -->
-        <footer>
-
+        <footer class="flex justify-space-between">
+            <!-- Colonna sinistra footer -->
+            <div class="col-left flex">
+                <div>
+                    immagine
+                </div>
+                <div>
+                    <div>
+                        artista
+                    </div>
+                    <div>
+                        nome brano
+                    </div>
+                </div>
+                <div>
+                    icone
+                </div>
+            </div>
+            <!-- /Colonna sinistra footer -->
+            <!-- Colonna centrale footer -->
+            <div class="col-center">
+                <div class="flex">
+                    icone avanti indietro pausa
+                </div>
+                <div>
+                    tempo e slider dei minuti
+                </div>
+            </div>
+            <!-- /Colonna centrale footer -->
+            <!-- Colonna destra footer -->
+            <div class="col-right">
+                icone coda e slider volume
+            </div>
+            <!-- /Colonna destra footer -->
         </footer>
         <!-- /Footer -->
     </body>
