@@ -444,7 +444,7 @@ footer .col-center .time {
 
 footer .col-center .time .time-slider {
     height: .3125rem;
-    width: 25vw;
+    width: calc(30vw - 60px);
     background: linear-gradient(to right,#c1c1c1 15%,#5a5a5a 15%, #5a5a5a);
     border-radius: .625rem;
     margin: 0 1.5625rem;
@@ -465,7 +465,7 @@ footer .col-right .fa-volume-high {
 
 footer .col-right .volume-slider {
     height: .3125rem;
-    width: 9vw;
+    width: calc(8vw + 30px);
     background: linear-gradient(to right,#c1c1c1 15%,#5a5a5a 15%, #5a5a5a);
     border-radius: .625rem;
 }
