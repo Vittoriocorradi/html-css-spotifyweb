@@ -181,6 +181,28 @@ nav .playlist ul li {
 
 nav .lower-nav {
     margin-top: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+nav .lower-nav .download {
+    margin-bottom: .625rem;
+    margin-top: .3125rem;
+}
+
+nav .lower-nav .download img {
+    width: .625rem;
+    margin-right: .625rem;
+}
+
+nav .lower-nav .profile {
+    align-items: center;
+    margin-top: .625rem;
+}
+
+nav .lower-nav .profile img {
+    width: 1.5625rem;
+    margin-right: .625rem;
 }
 
 @media screen and (max-width:552px) {
@@ -198,7 +220,7 @@ nav .lower-nav {
 
     nav .logo {
         height: auto;
-        padding: .3125rem .625rem .625rem;
+        padding: .3125rem .75rem .625rem;
     }
 
     nav .logo img {
@@ -212,6 +234,16 @@ nav .lower-nav {
     nav .menu li:first-child a {
         border-left: none;
         padding: .3125rem .8125rem;
+    }
+
+    nav .lower-nav {
+        padding-left: .75rem;
+        padding-right: .75rem;
+    }
+
+    nav .lower-nav .download img {
+        position: relative;
+        left: .4375rem;
     }
     
 }
