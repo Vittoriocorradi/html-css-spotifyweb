@@ -19,6 +19,7 @@ TYPO
 body {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
+    font-size: .875rem;
 }
 
 a {
@@ -453,15 +454,64 @@ footer .col-right {
     align-items: center;
 }
 
+footer .col-right .fa-list,
+footer .col-right .fa-display {
+    margin-right: .9375rem;
+}
+
 footer .col-right .fa-volume-high {
     margin-right: .625rem;
 }
 
 footer .col-right .volume-slider {
     height: .3125rem;
-    width: 12vw;
+    width: 9vw;
     background: linear-gradient(to right,#c1c1c1 15%,#5a5a5a 15%, #5a5a5a);
     border-radius: .625rem;
+}
+
+@media screen and (max-width:878px) {
+    footer .col-center .time .time-slider {
+        margin: 0 .9375rem;
+    }
+}
+
+@media screen and (max-width:640px) {
+    footer .col-left .icons {
+        flex-direction: column;
+    }
+
+    footer .col-left .song-artist  {
+        margin-right: 1.5625rem;
+    }
+
+    footer .col-left .icons {
+        gap: .3125rem;
+    }
+    
+    footer .col-center .time .time-slider {
+        margin: 0 .625rem;
+    }
+
+    footer .col-right .fa-list,
+    footer .col-right .fa-display {
+        margin-right: .625rem;
+    }
+}
+
+@media screen and (max-width:552px) {
+    footer .col-left .song-artist .name {
+        flex-direction: column;
+    }
+
+    footer .col-right .fa-list,
+    footer .col-right .fa-display {
+        margin-right: .4375rem;
+    }
+
+    footer .col-right .fa-volume-high {
+        margin-right: .3125rem;
+    }
 }
 
 /*
