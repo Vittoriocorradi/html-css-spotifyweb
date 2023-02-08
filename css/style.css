@@ -142,17 +142,41 @@ nav .menu a {
 
 nav .menu img {
     width: 1.25rem;
-    margin-right: .125rem;
+    margin-right: .4375rem;
 }
 
 nav .playlist {
     overflow: hidden;
     flex-direction: column;
+    margin-top: .9375rem;
+}
+
+nav .playlist .create-playlist {
+    align-items: center;
+    margin-top: .9375rem;
+}
+
+nav .playlist .create-playlist:before {
+    content: '+';
+    display: inline-block;
+    background-color: #a3a3a3;
+    height: 2.1875rem;
+    width: 2.1875rem;
+    color: #000;
+    line-height: 2.1875rem;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-right: .625rem
 }
 
 nav .playlist ul {
     flex-grow: 1;
     overflow: auto;
+    margin-top: 1.25rem;
+}
+
+nav .playlist ul li {
+    margin-bottom: 1.25rem;
 }
 
 nav .lower-nav {
