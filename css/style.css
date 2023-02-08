@@ -391,8 +391,58 @@ FOOTER
 footer {
     height: 5.625rem;
     background-color: #282828;
-    padding: .625rem .625rem 1.5625rem;
+    padding: .625rem .625rem 1.25rem;
     align-items: center;
+}
+
+footer .col-left {
+    align-items: center;
+}
+
+footer .col-left img {
+    width: 2.5rem;
+    margin-right: .625rem;
+}
+
+footer .col-left .song-artist {
+    margin-right: 2.5rem;
+}
+
+footer .col-left .song-artist div div:first-child {
+    margin-right: .1875rem;
+}
+
+footer .col-left .icons {
+    gap: .75rem;
+}
+
+footer .col-center {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer .col-center .icons {
+    gap: 1.25rem;
+    margin-bottom: .9375rem;
+    align-items: center;
+}
+
+footer .col-center .icons .play {
+    margin: 0 .625rem;
+    font-size: 1.5em;
+}
+
+footer .col-center .time {
+    align-items: center;
+}
+
+footer .col-center .time .time-bar {
+    height: .3125rem;
+    width: 25vw;
+    background: linear-gradient(to right,#c1c1c1 15%,#5a5a5a 15%, #5a5a5a);
+    border-radius: .625rem;
+    margin: 0 1.5625rem;
 }
 
 /*
