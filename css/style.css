@@ -79,6 +79,10 @@ a {
     padding-right: 1.25rem;
 }
 
+.mr-15 {
+    margin-right: .9375rem;
+}
+
 /*
 --------
 BODY
@@ -437,12 +441,27 @@ footer .col-center .time {
     align-items: center;
 }
 
-footer .col-center .time .time-bar {
+footer .col-center .time .time-slider {
     height: .3125rem;
     width: 25vw;
     background: linear-gradient(to right,#c1c1c1 15%,#5a5a5a 15%, #5a5a5a);
     border-radius: .625rem;
     margin: 0 1.5625rem;
+}
+
+footer .col-right {
+    align-items: center;
+}
+
+footer .col-right .fa-volume-high {
+    margin-right: .625rem;
+}
+
+footer .col-right .volume-slider {
+    height: .3125rem;
+    width: 12vw;
+    background: linear-gradient(to right,#c1c1c1 15%,#5a5a5a 15%, #5a5a5a);
+    border-radius: .625rem;
 }
 
 /*
