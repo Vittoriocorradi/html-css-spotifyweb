@@ -25,6 +25,10 @@ a {
     color: inherit;
 }
 
+nav .menu i {
+    font-size: 1.25rem;
+}
+
 main #discover a {
     font-size: .875rem;
 }
@@ -67,6 +71,14 @@ a {
     text-decoration: none;
 }
 
+.pdl-20 {
+    padding-left: 1.25rem;
+}
+
+.pdr-20 {
+    padding-right: 1.25rem;
+}
+
 /*
 --------
 BODY
@@ -102,13 +114,42 @@ nav .none-lg {
 nav .logo {
     height: 5.625rem;
     flex-shrink: 0;
+    padding: 1.25rem;
+}
+
+nav .logo img {
+    width: 75%;
 }
 
 nav .nav-content {
     flex-direction: column;
     overflow: hidden;
     height: 100%;
-    padding: 0 1.25rem .3125rem;
+}
+
+nav .menu li a {
+    padding: .3125rem 1.25rem;
+}
+
+nav .menu li:first-child a {
+    border-left: 2px solid #adff2f;
+    padding-left: 1.125rem;
+}
+
+nav .menu a {
+    display: block;
+}
+
+nav .menu li i {
+    margin-right: .5rem;
+}
+
+nav .menu li:nth-child(2) i {
+    margin-right: .625rem;
+}
+
+nav .menu li:nth-child(3) i {
+    margin-right: .75rem;
 }
 
 nav .playlist {
@@ -128,7 +169,6 @@ nav .lower-nav {
 @media screen and (max-width:552px) {
     nav {
         width: 3.125rem;
-        padding: .3125rem .9375rem .625rem;
     }
 
     nav .none-lg {
@@ -137,6 +177,24 @@ nav .lower-nav {
 
     nav .none-xs {
         display: none;
+    }
+
+    nav .logo {
+        height: auto;
+        padding: .3125rem .625rem .625rem;
+    }
+
+    nav .logo img {
+        width: 100%;
+    }
+
+    nav .menu li a {
+        padding: .3125rem .8125rem;
+    }
+
+    nav .menu li:first-child a {
+        border-left: none;
+        padding: .3125rem .8125rem;
     }
     
 }
@@ -287,3 +345,9 @@ footer {
     padding: .625rem .625rem 1.5625rem;
     align-items: center;
 }
+
+/*
+--------
+EFFETTI
+--------
+*/
