@@ -23,13 +23,14 @@
         <!-- Contenitore Nav e Main -->
         <div class="main-container flex">
             <!-- Nav -->
-            <nav class="flex justify-space-between">
-                <!-- Nav superiore -->
-                <div class="upper-nav">
-                    <div class="logo">
-                        <img src="img/logo-small.svg" alt="Logo piccolo" class="none-lg">
-                        <img src="img/logo.svg" alt="Logo grande" class="none-xs">
-                    </div>
+            <nav class="flex">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="img/logo-small.svg" alt="Logo piccolo" class="none-lg">
+                    <img src="img/logo.svg" alt="Logo grande" class="none-xs">
+                </div>
+
+                <div class="nav-content flex">
                     <!-- Menù icone -->
                     <ul class="menu">
                         <li><i class="fa-solid fa-house"></i><span class="none-xs">Home</span></li>
@@ -37,23 +38,28 @@
                         <li><i class="fa-solid fa-lines-leaning"></i><span class="none-xs">La tua Libreria</span></li>
                     </ul>
                     <!-- Playlist -->
-                    <ul class="playlist none-xs">
-                        <li>Playlist</li>
-                        <li>Crea playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                    </ul>
-                </div>
-                <!-- Nav inferiore -->
-                <div class="lower-nav">
-                    <i class="fa-solid fa-arrow-down"></i>
-                    <a href="#" class="none-xs">installa app</a>
-                    <hr class="none-xs">
-                    <div>
-                        immagine
-                        <span class="none-xs">John Doe</span>
+                    <div class="playlist flex none-xs">
+                        <div>Playlist</div>
+                        <div>Crea playlist</div>
+                        <ul>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                        </ul>
+                    </div>
+                    <!-- Lower nav -->
+                    <div class="lower-nav">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <a href="#" class="none-xs">installa app</a>
+                        <hr class="none-xs">
+                        <div>
+                            immagine
+                            <span class="none-xs">John Doe</span>
+                        </div>
                     </div>
                 </div>
             </nav>
