@@ -49,7 +49,13 @@ main .overlay button {
     color: #fff;
 }
 
-nav .lower-nav .download {
+footer .col-left .name,
+footer .col-left .icons {
+    color: #878787;
+}
+
+nav .lower-nav .download,
+footer .col-left .name {
     font-size: .75rem;
 }
 
@@ -64,6 +70,14 @@ main .row .col h3 {
 
 main h2 {
     font-size: 1.6em;
+}
+
+footer .col-center .icons .play {
+    font-size: 2em;
+}
+
+footer .col-center .time {
+    font-size: .625rem;
 }
 
 /*
@@ -456,7 +470,7 @@ FOOTER
 footer {
     height: 5.625rem;
     background-color: #282828;
-    padding: .625rem .625rem 1.25rem;
+    padding: .625rem;
     align-items: center;
 }
 
@@ -495,7 +509,6 @@ footer .col-center .icons {
 
 footer .col-center .icons .play {
     margin: 0 .625rem;
-    font-size: 1.5em;
 }
 
 footer .col-center .time {
@@ -504,7 +517,7 @@ footer .col-center .time {
 
 footer .col-center .time .time-slider {
     height: .3125rem;
-    width: calc(30vw - 60px);
+    width: calc(35vw - 5rem);
     background: linear-gradient(to right,#c1c1c1 15%,#5a5a5a 15%, #5a5a5a);
     border-radius: .625rem;
     margin: 0 1.5625rem;
