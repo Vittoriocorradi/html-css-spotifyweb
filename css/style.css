@@ -26,10 +26,6 @@ a {
     color: inherit;
 }
 
-nav .menu i {
-    font-size: 1.25rem;
-}
-
 main #discover a {
     font-size: .875rem;
 }
@@ -96,6 +92,7 @@ body {
 
 body .main-container {
     height: calc(100% - 5.625rem);
+    overflow: hidden;
 }
 
 /*
@@ -154,6 +151,7 @@ nav .playlist {
     overflow: hidden;
     flex-direction: column;
     margin-top: .9375rem;
+    min-height: 12.1875rem;
 }
 
 nav .playlist .create-playlist {
@@ -176,7 +174,7 @@ nav .playlist .create-playlist:before {
 
 nav .playlist ul {
     flex-grow: 1;
-    overflow: auto;
+    overflow-y: auto;
     margin-top: 1.25rem;
 }
 
@@ -263,7 +261,7 @@ main {
     background-color: #141922;
     height: 100%;
     width: calc(100% - 14.375rem);
-    overflow: auto;
+    overflow-y: auto;
     padding-top: 5.625rem;
 }
 
@@ -303,19 +301,50 @@ main .main-content {
 
 main #discover ul {
     justify-content: center;
-    gap: 1.25rem;
     text-transform: uppercase;
     margin-top: 1.25rem;
+    margin-right: -.3125rem;
+    margin-left: -.3125rem;
+    gap: .625rem;
 }
 
 main #discover ul li {
-    margin-bottom: 2.1875rem;
+    margin-bottom: .9375rem;
+    padding: .3125rem;
+}
+
+main #discover ul li:first-child {
+    border-bottom: 2px solid #adff2f;
+    position: relative;
+}
+
+main #discover ul li:first-child::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #141922;
+    width: 2.1875rem;
+    height: .625rem;
+    bottom: -0.625rem;
+    left: 0;
+}
+
+main #discover ul li:first-child::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #141922;
+    width: 2.1875rem;
+    height: .625rem;
+    bottom: -0.625rem;
+    right: 0;
 }
 
 /* Recently Played */
 
 main #recently-played h2 {
     margin-bottom: 1.5625rem;
+    margin-top: 1.25rem;
 }
 
 main .row {
