@@ -398,6 +398,7 @@ main #recently-played h2 {
 
 main .row {
     margin: 0 -0.4688rem;
+    align-items: flex-start;
 }
 
 main .row .col {
@@ -406,8 +407,13 @@ main .row .col {
     padding: .4688rem;
 }
 
+main .row .col .img-container {
+    position: relative;
+}
+
 main .row .col img {
     width: 100%;
+    display: block;
 }
 
 main .row .col h3 {
@@ -597,6 +603,32 @@ EFFETTI
 --------
 */
 
+/* Base effetti per immagini */
+
+main .col .img-container .img-overlay {
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+main .col .img-container .img-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    border: .375rem solid #fff;
+    border-radius: 50%;
+    padding: .125rem .5rem .125rem .75rem;
+    color: #fff;
+    display: none;
+}
+
+/* Hover */
 
 nav a:hover,
 main #discover ul li a:hover,
@@ -616,4 +648,17 @@ main .overlay button:hover {
 
 footer .col-center .icons .play:hover {
     transform: scale(1.2);
+}
+
+main .col:hover {
+    cursor: pointer;
+}
+
+main .col:hover .img-container .img-overlay,
+main .col:hover .img-container .img-play {
+    display: initial;
+}
+
+main #popular-artists .col:hover .img-overlay {
+    border-radius: 50%;
 }
