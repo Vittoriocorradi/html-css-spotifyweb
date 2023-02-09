@@ -525,11 +525,15 @@ footer .col-center .time {
     align-items: center;
 }
 
-footer .col-center .time .time-slider {
+footer .slider {
     height: .3125rem;
-    width: calc(35vw - 5rem);
     background: linear-gradient(to right,#c1c1c1 15%,#5a5a5a 15%, #5a5a5a);
     border-radius: .625rem;
+    position: relative;
+}
+
+footer .col-center .time .time-slider {
+    width: calc(35vw - 5rem);
     margin: 0 1.5625rem;
 }
 
@@ -547,10 +551,7 @@ footer .col-right .fa-volume-high {
 }
 
 footer .col-right .volume-slider {
-    height: .3125rem;
     width: calc(8vw + 30px);
-    background: linear-gradient(to right,#c1c1c1 15%,#5a5a5a 15%, #5a5a5a);
-    border-radius: .625rem;
 }
 
 @media screen and (max-width:878px) {
@@ -628,6 +629,18 @@ main .col .img-container .img-play {
     display: none;
 }
 
+footer .slider .slider-circle {
+    background-color: #ccc;
+    width: .9375rem;
+    height: .9375rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
 /* Hover */
 
 nav a:hover,
@@ -661,4 +674,13 @@ main .col:hover .img-container .img-play {
 
 main #popular-artists .col:hover .img-overlay {
     border-radius: 50%;
+}
+
+footer .slider:hover {
+    background: linear-gradient(to right,#adff2f 15%,#5a5a5a 15%, #5a5a5a);
+    cursor: pointer;
+}
+
+footer .slider:hover .slider-circle {
+    display: initial;
 }
