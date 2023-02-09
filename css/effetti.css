@@ -1,0 +1,96 @@
+/*
+--------
+EFFETTI
+--------
+*/
+
+/* Base effetti per immagini */
+
+main .col .img-container .img-overlay {
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+main .col .img-container .img-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    border: .375rem solid #fff;
+    border-radius: 50%;
+    padding: .125rem .5rem .125rem .75rem;
+    color: #fff;
+    display: none;
+}
+
+footer .slider .slider-circle {
+    background-color: #ccc;
+    width: .9375rem;
+    height: .9375rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* HOVER */
+
+/* Hover links */
+
+nav a:hover,
+main #discover ul li a:hover,
+footer .col-left a:hover .name,
+footer .col-left .icons a:hover {
+    color: #fff;
+}
+
+nav .playlist .create-playlist:hover a::before {
+    background-color: #fff;
+}
+
+/* Hover bottone */
+
+main .overlay button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Hover icona play */
+
+footer .col-center .icons .play:hover {
+    transform: scale(1.2);
+}
+
+/* Hover immagini */
+
+main .col:hover {
+    cursor: pointer;
+}
+
+main .col:hover .img-container .img-overlay,
+main .col:hover .img-container .img-play {
+    display: initial;
+}
+
+main #popular-artists .col:hover .img-overlay {
+    border-radius: 50%;
+}
+
+/* Hover slider volume e tempo */
+
+footer .slider:hover {
+    background: linear-gradient(to right,#adff2f 15%,#5a5a5a 15%, #5a5a5a);
+    cursor: pointer;
+}
+
+footer .slider:hover .slider-circle {
+    display: initial;
+}

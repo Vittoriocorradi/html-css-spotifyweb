@@ -1,0 +1,70 @@
+/*
+--------
+TYPO
+--------
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+nav {
+    color: #717171;
+}
+
+main {
+    color: #7d7f84;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav .playlist div:first-child,
+nav .lower-nav a:last-child div div:last-child,
+main .overlay button {
+    color: #fff;
+}
+
+footer .col-left .name,
+footer .col-left .icons {
+    color: #878787;
+}
+
+nav .lower-nav .download,
+footer .col-left .name {
+    font-size: .75rem;
+}
+
+main h2,
+main h3 {
+    color: #fff;
+}
+
+main .row .col h3 {
+    font-size: 1.2em;
+}
+
+main h2 {
+    font-size: 1.6em;
+}
+
+footer .col-center .icons .play {
+    font-size: 2em;
+}
+
+footer .col-center .time {
+    font-size: .625rem;
+}

@@ -1,0 +1,176 @@
+/*
+--------
+MAIN
+--------
+*/
+
+main {
+    background-color: #141922;
+    height: 100%;
+    width: calc(100% - 14.375rem);
+    overflow-y: auto;
+    padding-top: 5.625rem;
+}
+
+/* Overlay */
+
+main .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 5.625rem;
+    position: fixed;
+    top: 0;
+    left: 14.375rem;
+    right: 0;
+    justify-content: flex-end;
+    padding-right: 1.5625rem;
+    z-index: 1;
+}
+
+main .overlay button {
+    font-family: inherit;
+    background-color: inherit;
+    padding: .9375rem 2.5rem;
+    border: 1px solid #fff;
+    border-radius: 2.5rem;
+}
+
+/* MAIN CONTENT */
+
+main .main-content {
+    padding-left: 1.25rem;
+    padding-right: 1.875rem;
+}
+
+/* Lista discovery */
+
+main #discover ul {
+    justify-content: center;
+    margin-top: 1.25rem;
+    margin-right: -.3125rem;
+    margin-left: -.3125rem;
+    gap: .625rem;
+}
+
+main #discover ul li {
+    margin-bottom: .9375rem;
+    padding: .3125rem;
+}
+
+main #discover ul li:first-child {
+    border-bottom: 2px solid #adff2f;
+    position: relative;
+}
+
+main #discover ul li:first-child::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #141922;
+    width: 2.1875rem;
+    height: .625rem;
+    bottom: -0.625rem;
+    left: 0;
+}
+
+main #discover ul li:first-child::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #141922;
+    width: 2.1875rem;
+    height: .625rem;
+    bottom: -0.625rem;
+    right: 0;
+}
+
+/* Recently Played */
+
+main #recently-played h2 {
+    margin-bottom: 1.5625rem;
+    margin-top: 1.25rem;
+}
+
+main .row {
+    margin: 0 -0.4688rem;
+    align-items: flex-start;
+}
+
+main .row .col {
+    width: calc(100% / 6);
+    max-width: 12.5rem;
+    padding: .4688rem;
+}
+
+main .row .col .img-container {
+    position: relative;
+}
+
+main .row .col img {
+    width: 100%;
+    display: block;
+}
+
+main .row .col h3 {
+    margin: 1.25rem 0 .625rem;
+}
+
+/* John Doe e artisti popolari */
+
+main #john-doe h2,
+main #popular-artists h2 {
+    margin: 2.1875rem 0 .9375rem;
+}
+
+main #john-doe h2 + div,
+main #popular-artists h2 + div {
+    margin-bottom: 1.875rem;
+}
+
+main #popular-artists img {
+    border-radius: 50%;
+}
+
+/* MEDIA QUERY MAIN */
+
+/* Media Tablet */
+
+@media screen and (max-width: 878px) {
+    main .row {
+        flex-wrap: wrap;
+        margin: 0 -0.3125rem;
+        justify-content: flex-start;
+    }
+
+    main .row .col {
+        width: calc(100% / 4);
+        padding: .3125rem;
+    }
+}
+
+/* Media Phone S */
+
+@media screen and (max-width: 640px) {
+    main .row {
+        justify-content: space-between;
+    }
+
+    main .row .col {
+        width: calc(100% / 2);
+    }
+}
+
+/* Media Phone XS */
+
+@media screen and (max-width:552px) {
+    main {
+        width: calc(100% - 3.125rem);
+    }
+
+    main .overlay {
+        left: 3.125rem;
+    }
+
+    main .row .col {
+        max-width: 220px;
+    }
+}
