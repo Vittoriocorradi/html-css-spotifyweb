@@ -198,11 +198,10 @@ nav .playlist {
 }
 
 nav .playlist .create-playlist {
-    align-items: center;
     margin-top: .9375rem;
 }
 
-nav .playlist .create-playlist:before {
+nav .playlist .create-playlist a::before {
     content: '+';
     display: inline-block;
     background-color: #a3a3a3;
@@ -212,7 +211,12 @@ nav .playlist .create-playlist:before {
     line-height: 2.1875rem;
     text-align: center;
     font-size: 2.5rem;
-    margin-right: .625rem
+    margin-right: .625rem;
+    vertical-align: middle;
+}
+
+nav .playlist .create-playlist a {
+    display: inline-block;
 }
 
 nav .playlist ul {
@@ -592,3 +596,16 @@ footer .col-right .volume-slider {
 EFFETTI
 --------
 */
+
+
+nav a:hover,
+main #discover ul li a:hover,
+footer .col-left a:hover .name,
+footer .col-left .icons a:hover {
+    color: #fff;
+}
+
+nav .playlist .create-playlist:hover a::before {
+    background-color: #fff;
+}
+
