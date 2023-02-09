@@ -502,7 +502,7 @@ footer .col-left .icons {
 footer .col-center {
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 footer .col-center .icons {
@@ -609,3 +609,11 @@ nav .playlist .create-playlist:hover a::before {
     background-color: #fff;
 }
 
+main .overlay button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+footer .col-center .icons .play:hover {
+    transform: scale(1.2);
+}
