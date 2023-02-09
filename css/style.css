@@ -27,8 +27,16 @@ nav {
     color: #717171;
 }
 
+main {
+    color: #7d7f84;
+}
+
 .text-uppercase {
     text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
 }
 
 a {
@@ -36,7 +44,8 @@ a {
 }
 
 nav .playlist div:first-child,
-nav .lower-nav a:last-child div div:last-child {
+nav .lower-nav a:last-child div div:last-child,
+main .overlay button {
     color: #fff;
 }
 
@@ -44,20 +53,17 @@ nav .lower-nav .download {
     font-size: .75rem;
 }
 
-main #discover a {
-    font-size: .875rem;
-}
-
-.text-center {
-    text-align: center;
+main h2,
+main h3 {
+    color: #fff;
 }
 
 main .row .col h3 {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
-main .row .col .text-center div:last-child {
-    font-size: .875rem;
+main h2 {
+    font-size: 1.6em;
 }
 
 /*
@@ -309,14 +315,11 @@ main .overlay {
 }
 
 main .overlay button {
-    color: inherit;
     font-family: inherit;
     background-color: inherit;
     padding: .9375rem 2.5rem;
     border: 1px solid #fff;
     border-radius: 2.5rem;
-    text-transform: uppercase;
-    pointer-events: auto;
 }
 
 /* Main Content */
@@ -395,7 +398,7 @@ main .row .col h3 {
 
 main #john-doe h2,
 main #popular-artists h2 {
-    margin: 2.5rem 0 .9375rem;
+    margin: 2.1875rem 0 .9375rem;
 }
 
 main #john-doe h2 + div,
